@@ -1,0 +1,492 @@
+aa html,
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "rennes";
+  font-weight: 50;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header img {
+  width: 50%;
+}
+header .links {
+  display: none;
+}
+header ul {
+  display: none;
+}
+header .menu {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 7%;
+  left: 80%;
+}
+header .menu .bar1, header .menu .bar2, header .menu .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+header.open {
+  transition: ease-in-out 3sec;
+}
+header.open ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 50vh;
+  flex-direction: column;
+  line-height: 50px;
+}
+header.open ul li a {
+  text-decoration: none;
+  font-size: xx-large;
+  color: black;
+  padding: 30px;
+}
+header.open .bar1 {
+  transform: rotate(45deg) translate(15px, 10px);
+}
+header.open .bar2 {
+  opacity: 0;
+}
+header.open .bar3 {
+  transform: rotate(-45deg) translate(5px, 0px);
+  transition: 1;
+}
+
+.banner {
+  margin: 60px 0 120px 0;
+}
+.banner h1 {
+  color: black;
+  text-align: center;
+  font-size: 70px;
+  line-height: 90px;
+}
+.banner h1 span {
+  color: orange;
+}
+.banner img {
+  width: 99%;
+  margin: 20px 0;
+}
+
+.about {
+  background-color: black;
+}
+.about .container .col-md-6 .n {
+  background-color: orange;
+  padding: 20px 0;
+  width: 380px;
+  margin-top: -130px;
+  margin-left: -17px;
+}
+.about .container .col-md-6 .n h6 {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: xx-large;
+  margin-left: 20px;
+}
+.about .container .col-md-6 .n p {
+  margin: 40px 0px 40px 30px;
+  color: black;
+}
+.about .container .col-md-6 p {
+  font-size: large;
+  margin-top: 40px;
+  color: white;
+  line-height: 30px;
+}
+.about .container .col-md-2 {
+  background-color: white;
+  margin: 0px;
+  line-height: 50px;
+}
+.about .container .col-md-2 h4 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+.about .container .col-md-2 p {
+  font-size: x-large;
+}
+.about .container .col-md-5 {
+  background-color: orange;
+  margin: 0px;
+  line-height: 50px;
+}
+.about .container .col-md-5 .t {
+  display: flex;
+  justify-content: space-between;
+}
+.about .container .col-md-5 .t h4 {
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+}
+.about .container .col-md-5 .t p {
+  font-size: x-large;
+  color: white;
+}
+.about .container .col-md-5 p {
+  color: white;
+}
+.about .container #imggg {
+  width: 100%;
+}
+
+.mobi .mob {
+  display: flex;
+  margin: 70px 50px 0 0;
+}
+.mobi .mob h2 {
+  color: orange;
+  font-size: x-large;
+  font-weight: bold;
+}
+.mobi .mob .emp {
+  background-color: orange;
+  width: 80px;
+  height: 2px;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+.mobi p {
+  margin-top: 25px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.aims {
+  background-color: black;
+}
+.aims .row {
+  margin-top: 80px 0;
+}
+.aims .row #nelson {
+  background-color: rgb(255, 123, 0);
+  margin: 90px 0;
+  padding: 20px;
+}
+.aims .row #nelson h1 {
+  color: black;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-left: 20px;
+  line-height: 40px;
+}
+.aims .row #nelson h1 span {
+  color: white;
+}
+.aims .row #nelson h1 #wewe {
+  margin-left: 250px;
+}
+.aims .row #nelson p {
+  color: white;
+  margin-top: 30px;
+}
+.aims .row .col-md-6 {
+  margin-top: 30px;
+}
+.aims .row .col-md-6 .mobb {
+  display: flex;
+  margin-top: 60px;
+}
+.aims .row .col-md-6 .mobb h2 {
+  color: rgb(255, 123, 0);
+  font-size: x-large;
+  font-weight: bold;
+  margin-left: 50px;
+}
+.aims .row .col-md-6 .mobb .emp {
+  background-color: rgb(255, 123, 0);
+  width: 50px;
+  height: 2px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.aims .row .col-md-6 p {
+  margin: 20px 0px 20px 50px;
+  color: white;
+  font-size: small;
+  line-height: 20px;
+}
+
+.donate {
+  margin-bottom: 90px;
+}
+.donate .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.donate .row .col-md-4 h1 {
+  color: rgb(255, 123, 0);
+  font-size: 49px;
+  margin: 60px;
+  line-height: 60px;
+}
+.donate .row .col-md-4 #help {
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+.donate .row .col-md-4 p {
+  margin-top: 30px;
+  font-size: large;
+  text-align: center;
+}
+.donate .logo {
+  margin-top: 80px;
+}
+.donate .logo .row {
+  margin-top: 30px;
+}
+
+.footer {
+  background-color: black;
+}
+.footer .col-md-3 {
+  margin-top: 50px;
+  text-align: center;
+}
+.footer .col-md-3 h6 {
+  font-weight: bold;
+  font-size: x-large;
+  color: white;
+}
+.footer .col-md-3 p {
+  color: white;
+  margin-top: 40px;
+  line-height: 20px;
+}
+.footer .col-md-5 {
+  margin-top: 50px;
+  text-align: center;
+}
+.footer .col-md-5 h6 {
+  font-weight: bold;
+  font-size: x-large;
+  color: white;
+}
+.footer .col-md-5 .links {
+  margin-top: 70px;
+}
+.footer .col-md-5 .links a {
+  margin: 0 0 0 20px;
+  color: white;
+  text-decoration: none;
+  font-size: small;
+  margin-top: 40px;
+}
+.footer .line {
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  margin-top: 50px;
+}
+.footer #foot {
+  line-height: 40px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.footer #foot .col-md-6 {
+  display: flex;
+}
+.footer #foot .col-md-6 p {
+  color: white;
+  font-size: x-large;
+}
+.footer #foot .col-md-6 a {
+  color: white;
+  font-size: x-large;
+}
+.footer #foot .col-md-6 #kadiki {
+  font-size: small;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .container img {
+    width: 20%;
+  }
+  header .container .links {
+    display: inline-flex;
+  }
+  header .container .links a {
+    color: black;
+    margin: 0 30px;
+    text-decoration: none;
+  }
+  header .container .links a:hover {
+    color: rgb(255, 123, 0);
+  }
+  header .container ul {
+    display: none;
+  }
+  header .container .menu {
+    display: none;
+  }
+  .banner {
+    display: flex;
+    flex-direction: row;
+  }
+  .banner h1 {
+    font-size: 60px;
+    text-align: start;
+    margin: 90px 0;
+    margin-left: 30px;
+  }
+  .banner img {
+    margin-left: 150px;
+    width: 150%;
+  }
+  .about .container .col-md-6 .n {
+    width: 350px;
+    margin-top: -100px;
+  }
+  .about .container .col-md-6 .n h6 {
+    font-size: larger;
+  }
+  .about .container .col-md-6 .n p {
+    font-size: xx-small;
+    line-height: 20px;
+  }
+  .about .container .col-md-6 p {
+    color: white;
+    line-height: 25px;
+    font-size: large;
+    margin-left: -30px;
+    font-weight: 30px;
+  }
+  .about .container .col-md-6 img {
+    width: 50%;
+    margin: 40px 0 90px 30px;
+  }
+  .about .container .col-md-2 {
+    width: 200px;
+    margin: 10px 20px;
+    height: 70px;
+    line-height: 40px;
+  }
+  .about .container .col-md-2 h4 {
+    font-size: small;
+  }
+  .about .container .col-md-2 p {
+    font-size: small;
+  }
+  .about .container .col-md-5 {
+    width: 500px;
+    margin: 10px 20px;
+    line-height: 40px;
+    height: 70px;
+  }
+  .about .container .col-md-5 .t h4 {
+    font-size: small;
+  }
+  .about .container .col-md-5 .t p {
+    font-size: small;
+  }
+  .about .container .col-md-5 .tag {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about .container .col-md-5 .tag p {
+    font-size: small;
+  }
+  .about .container .col-md-5 .tag .wq {
+    margin-top: 18px;
+    width: 150px;
+    height: 6px;
+    background-color: wheat;
+    border-radius: 45px;
+  }
+  .about .container .col-md-5 .tag .wq .qw {
+    width: 80px;
+    height: 6px;
+    background-color: white;
+    border-radius: 45px;
+  }
+  .donate .row .col-md-4 #help {
+    text-align: start;
+    font-size: small;
+  }
+  .donate .row .col-md-4 p {
+    text-align: start;
+    font-size: small;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */

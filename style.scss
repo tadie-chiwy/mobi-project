@@ -1,0 +1,269 @@
+aa
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: "rennes";
+    font-weight: 50;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header{
+    img{width: 50%;}
+.links{display: none;}
+ul{display: none;}
+.menu{
+    cursor: pointer;display: inline-block; position: absolute; top: 7%; left: 80%;
+    .bar1,.bar2,.bar3{
+        width: 35px;height: 5px;background-color: black;margin: 6px 0;
+
+    }
+    }
+    &.open{transition: ease-in-out 3sec;
+        ul{display: flex;justify-content: center;align-items: center;background-color: white;width: 100%;height: 50vh;flex-direction: column;line-height:50px;li{a{text-decoration: none;font-size: xx-large;color: black;padding: 30px;}}}
+        .bar1{transform: rotate(45deg) translate(15px, 10px);}
+        .bar2{opacity: 0;}
+        .bar3{transform: rotate(-45deg) translate(5px, 0px);transition: 1;}
+    }
+}
+.banner{ margin: 60px 0 120px 0;
+    h1{color: black;span{color: orange;}text-align: center;font-size: 70px;line-height: 90px;}
+    img{width: 99%;margin:20px 0;}
+}
+.about{ background-color:  black; 
+    .container{
+        .col-md-6{
+            .n{background-color: orange;h6{font-weight: bold;line-height: 30px;font-size: xx-large;margin-left: 20px;}p{margin: 40px 0px  40px 30px;color: black;}padding: 20px 0;width: 380px;margin-top: -130px;margin-left: -17px;}
+            p{font-size: large;margin-top: 40px;color: white;line-height: 30px;}
+        }
+        .col-md-2{
+            background-color: white;margin: 0px ;h4{font-weight: bold;font-size: xx-large;}line-height: 50px;p{font-size: x-large;}
+        }
+        .col-md-5{
+            background-color: orange;margin: 0px; line-height: 50px;.t{display: flex;justify-content:space-between;h4{font-size: xx-large;font-weight: bold;color: white;}p{font-size: x-large;color: white;}}p{color: white;}
+        }
+        #imggg{width: 100%;}
+    }
+}
+// p
+.mobi{
+    .mob{display: flex; margin: 70px 50px 0 0;
+        h2{color: orange;font-size: x-large;font-weight: bold;}
+        .emp{
+            background-color: orange; width: 80px; height: 2px;margin-top: 13px; margin-left: 10px;
+        }
+    }
+    p{margin-top: 25px;line-height: 25px;margin-bottom: 50px;}
+}
+// aims
+.aims{background-color: black;
+    .row{
+        margin-top: 80px 0;
+        #nelson{
+            background-color: rgb(255, 123, 0); margin: 90px 0 ; padding: 20px;
+            h1{color: black;font-size: xx-large;font-weight: bold;span{color: white;}#wewe{margin-left: 250px;}margin-left: 20px;line-height: 40px;}
+            p{color: white;margin-top: 30px;}
+        }
+        .col-md-6{margin-top: 30px;
+            .mobb{display: flex; margin-top: 60px;
+                h2{color: rgb(255, 123, 0);font-size: x-large;font-weight: bold;margin-left: 50px;}
+                .emp{background-color: rgb(255, 123, 0);width: 50px;height: 2px;margin-top: 10px;margin-left: 20px;}
+            }
+            p{margin: 20px 0px 20px 50px;color: white;font-size: small;line-height: 20px;}
+        }
+    }
+}
+// donate
+.donate{margin-bottom: 90px;
+    .row{
+        display: flex;align-items: center;justify-content: space-around;
+        .col-md-4{
+            h1{color: rgb(255, 123, 0);font-size: 49px;margin: 60px;line-height: 60px;}
+            #help{font-weight: bold;font-size: large;text-align: center;}
+            p{margin-top: 30px; font-size: large;text-align: center;}
+        }
+    }
+    .logo{
+        margin-top: 80px;
+        .row{margin-top: 30px;}
+    }
+
+}
+.footer{
+    background-color: black;
+    .col-md-3{margin-top: 50px; text-align: center;
+        h6{font-weight: bold;font-size: x-large;color: white;}
+        p{color: white;margin-top: 40px;line-height: 20px;}
+    }
+    .col-md-5{margin-top: 50px; text-align: center;
+        h6{font-weight: bold;font-size: x-large;color: white;}
+        .links{ margin-top: 70px;
+        a{margin:0  0 0 20px;color: white;text-decoration: none;font-size: small;margin-top: 40px;}
+
+        }
+        
+    }
+    .line{background-color: white;width: 100%;height: 1px;margin-top: 50px ;}
+    #foot{line-height: 40px;
+        margin-top: 50px; padding-bottom: 50px;
+        .col-md-6{
+            display: flex;
+            p{color: white;font-size: x-large;}
+            a{color: white;font-size: x-large;}
+            #kadiki{font-size: small;}
+        }
+    }
+
+}
+
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    header{
+      
+        .container{  display: flex; align-items: center; justify-content: space-between;
+            img{width: 20%;};
+            .links{display: inline-flex;
+                
+                a{color:  black;margin: 0 30px;text-decoration: none;}
+              
+            }
+            .links{
+                a:hover{color: rgb(255, 123, 0);}
+            }
+            ul{display: none;}
+            .menu{display: none;}
+        }
+    }
+    // banner
+    .banner{display: flex; flex-direction: row;
+                h1{font-size: 60px;text-align: start;margin: 90px 0;margin-left: 30px;}
+                img{margin-left:150px ;width: 150%;}
+}
+// about
+.about{
+    .container{
+        .col-md-6{
+            .n{width: 350px;h6{font-size: larger;}p{font-size: xx-small;line-height: 20px;}margin-top: -100px;}
+            p{color: white;line-height: 25px;font-size: large;margin-left: -30px;font-weight: 30px;}
+            img{width: 50%;margin: 40px 0 90px 30px;}
+        }
+        .col-md-2{
+            width: 200px;margin: 10px 20px; height: 70px; line-height: 40px;
+            h4{font-size: small;}
+            p{font-size: small;}
+        }
+        .col-md-5{
+            width: 500px;margin: 10px 20px; line-height: 40px; height: 70px;
+            .t{   h4{font-size: small;}
+            p{font-size: small;}}
+            .tag{
+                display: flex;justify-content: space-between;
+                p{font-size: small;}
+                .wq{margin-top: 18px;
+                    width: 150px;height: 6px;background-color: wheat; border-radius: 45px;
+                    .qw{width: 80px;height: 6px;background-color: white;border-radius: 45px;}
+                }
+            }
+        }
+    }
+}
+.donate{
+    .row{
+        .col-md-4{
+            #help{text-align: start;font-size: small;}
+            p{text-align: start;font-size: small;}
+        }
+    }
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
